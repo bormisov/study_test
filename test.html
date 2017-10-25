@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<style type="text/css">
+	ul.menu > li {
+	    float: left;
+	    position: relative;
+	}
+	ul.menu > li > a {
+	    display: block;
+	    padding: 10px;
+	    color: white;
+	    background-color: red;
+	    text-decoration: none;
+	}
+	ul.submenu {
+	    display: none;
+	    position: absolute;
+	    width: 120px;
+	    top: 37px;
+	    left: 0;
+	    background-color: white;
+	    border: 1px solid red;
+	}
+	ul.menu > li:hover > ul.submenu {
+    display: block;
+	}
+</style>
+<script type="text/javascript">
+	function myf(){
+		var ppp = document.getElementById('comment')
+		alert(ppp.value)
+	}
+</script>
+</head> 
+<body> 
+<ul class="menu">
+    <li ><a href=# onMouseOver='my_func()'>Menu 1</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 1</a></li>
+            <li><a href=#>Sudmenu 1</a></li>
+            <li><a href=#>Sudmenu 1</a></li>
+        </ul>
+    </li>
+    <li><a href=#>Menu 2</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 2</a></li>
+            <li><a href=#>Sudmenu 2</a></li>
+            <li><a href=#>Sudmenu 2</a></li>
+        </ul>
+    </li>
+    <li><a href=#>Menu 3</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 3</a></li>
+            <li><a href=#>Sudmenu 3</a></li>
+            <li><a href=#>Sudmenu 3</a></li>
+        </ul>
+    </li>
+    <li><a href=#>Menu 4</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 4</a></li>
+            <li><a href=#>Sudmenu 4</a></li>
+            <li><a href=#>Sudmenu 4</a></li>
+        </ul>
+    </li>
+    <li><a href=#>Menu 5</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 5</a></li>
+            <li><a href=#>Sudmenu 5</a></li>
+            <li><a href=#>Sudmenu 5</a></li>
+        </ul>
+    </li>
+</ul>
+<div>
+	<table id = 'mytable'>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+	</table>
+</div>
+<form id="form" onsubmit="myf()">
+	<textarea id="comment"> </textarea>
+	<input type="submit" name="button">
+</form>
+<script type="text/javascript">
+	var table = document.getElementById('mytable');
+	var row = document.createElement('tr');
+	table.appendchild(row);
+	var ceil = document.createElement('td');
+	ceil.appendchild(document.createElement('text'))
+	var ceil = document.createElement('td');
+	row.appendchild(ceil);
+</script>
+
+</body> 
+</html>
